@@ -17,26 +17,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/list">RestaurantsList</Link>
-          </li>
-          <li>
-            <Link to="/create">RestaurantCreate</Link>
-          </li>
-          <li>
-            <Link to="/update">RestaurantUpdate</Link>
-          </li>
-          <li>
-            <Link to="/detail">RestaurantDetail</Link>
-          </li>
-          <li>
-            <Link to="/search">RestaurantSearch</Link>
-          </li>
-        </ul>
+        
         <Route exact path="/">
           <Home></Home>
         </Route>
