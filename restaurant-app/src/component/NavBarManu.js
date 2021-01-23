@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faUser, faList, faHome, faPlus, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faList, faHome, faPlus, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Navbar, Nav } from 'react-bootstrap'
 import {
-    BrowserRouter as Router,
-    Route,
     Link
 } from 'react-router-dom'
 class NavBarManu extends Component {

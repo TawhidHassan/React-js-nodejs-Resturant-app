@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee,faEdit,faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faEdit,faTrash } from '@fortawesome/free-solid-svg-icons'
 import {
     Link
   } from 'react-router-dom'

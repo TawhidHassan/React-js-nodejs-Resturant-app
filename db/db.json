@@ -1,10 +1,4 @@
 {
-  "login": [
-    {
-      "name": "sifat",
-      "password": "1234"
-    }
-  ],
   "restaurant": [
     {
       "id": 1,
@@ -70,11 +64,21 @@
       "id": 9
     },
     {
-      "name": "youtube 2",
-      "email": "testresto2@youtube.com",
-      "rating": "3.1",
-      "address": "google 2",
       "id": 10
+    },
+    {
+      "name": "sifat",
+      "email": "testresto@youtube.com",
+      "rating": "4.9",
+      "address": "google",
+      "id": 11
+    },
+    {
+      "name": "kasiba",
+      "email": "sifat@gmai.com",
+      "address": "dhaka",
+      "rating": "3.3",
+      "id": 12
     }
   ]
 }
