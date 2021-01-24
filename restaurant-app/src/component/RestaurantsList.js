@@ -25,6 +25,21 @@ export default class RestaurantsList extends Component {
             })
         })
     }
+    delete(id)
+    {
+        fetch('http://localhost:3000/restaurant/'+id,
+        {
+            method: "DELETE",
+            // headers:{
+            //     'Content-Type':'application/json'
+            // },
+        }).then((result)=>{
+            result.json().then((resp)=>{
+                alert("Restaurant has heen Delete")
+                this.getData()
+            })
+        })
+    }
     render() {
         return (
             <div>
