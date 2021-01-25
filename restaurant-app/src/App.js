@@ -13,40 +13,26 @@ import RestaurantDetail from './component/RestaurantDetail'
 import RestaurantSearch from './component/RestaurantSearch'
 import Login from './component/Login'
 import Logout from './component/Logout'
+import Protected from './component/Protected'
 
 function App() {
   return (
     <div className="App">
       <Router>
 
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
+      <Protected exact path="/" component={Home} />
 
-        <Route path="/list">
-          <RestaurantsList ></RestaurantsList>
-        </Route>
-
-        <Route path="/create">
-          <RestaurantCreate ></RestaurantCreate>
-        </Route>
-
-        <Route path="/update/:id"
+      <Protected exact path="/details" component={RestaurantDetail} />
+        <Protected exact path="/update/:id" component={RestaurantUpdate} />
+        {/* <Route path="/update/:id"
           render={props => (
             <RestaurantUpdate {...props} />
           )}
         >
-
-        </Route>
-
-
-        <Route path="/detail">
-          <RestaurantDetail ></RestaurantDetail>
-        </Route>
-
-        <Route path="/search">
-          <RestaurantSearch ></RestaurantSearch>
-        </Route>
+        </Route> */}
+        <Protected exact path="/search" component={RestaurantSearch} />
+        <Protected exact path="/create" component={RestaurantCreate} />
+        <Protected exact path="/list" component={RestaurantsList} />
 
         <Route path="/login"
           render={props => (
