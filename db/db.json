@@ -1,4 +1,10 @@
 {
+  "login": [
+    {
+      "name": "sifat",
+      "password": "12345678"
+    }
+  ],
   "restaurant": [
     {
       "id": 1,
